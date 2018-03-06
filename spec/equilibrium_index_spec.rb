@@ -11,5 +11,11 @@ describe 'EquilibriumIndex' do
       expected_output = @ei.find_equilibrium_index(sample_array)
       expect(expected_output).to be_nil
     end
+
+    it 'should find equilibrium index for a given array' do
+      sample_array = [-7, 1, 5, 2, -4, 3, 0]
+      expected_output = @ei.find_equilibrium_index(sample_array)
+      expect(expected_output).to be 3
+    end
   end
 end
